@@ -8,7 +8,15 @@
 */
 
 function isAnagram(str1, str2) {
-
+  var str1 = str1.split("").sort().join("");
+    var str2 = str2.split("").sort().join("");
+    if (str1 === str2){
+        return true
+    } else {
+        return false
+    }
 }
+
+console.log(isAnagram("cat", "tac"));
 
 module.exports = isAnagram;
